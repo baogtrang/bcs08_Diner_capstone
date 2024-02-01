@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Capstone</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS từ các library -->
+  <!-- ------------ Bỏ vào từ đây ------------ -->
+
+  <!-- ------------ đến đây nhé ------------ -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <!-- BẢO -->
+  <header class="main__header">
+    <div class="container header__container">
+      <div class="header__content">
+        <div class="dinner__logo">
+          <h1>
+            <a href="http://127.0.0.1:54268/index.html">Diner</a>
+          </h1>
+        </div>
+        <div class="header__nav">
+          <div class="header__search">
+            <form action="http://127.0.0.1:51151/index.html" method="GET" class="search">
+              <input type="search" class="search__input" name="search__here" placeholder="Search here..."
+                onload="equalWidth()" required">
+              <span class="fa-solid fa-magnifying-glass"></span>
+            </form>
+          </div>
+
+
+          <div class="header__theme text-center">
+            <!-- toggle for light and dark theme -->
+            <div class="nav__theme">
+              <div class="theme__container">
+                <div class="theme__content">
+                  <label class="theme__switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="toggle">
+                      <i class="fa-solid fa-sun-bright"></i>
+                      <i class="fa-regular fa-moon"></i>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="drop__down text-center">
+            <button id="overlay__trigger" type="button">
+              <i class="fa fa-bars" aria-hidden="trued"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main__banner">
+    <div class="container banner__container">
+      <div class="banner__content row">
+        <div class="banner__info col-lg-8">
+          <h3 class="mg-4">The only thing we love more than food is you!</h3>
+          <p class="mt-md-4 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur facere id
+            praesentium ex molestias
+            esse deserunt at quis maxime repellendus est ab rem ratione aut ad, aperiam vero aliquam nisi.</p>
+          <a href="#" class="btn btn-white mt-sm-5 mt-4 mr-2">
+            Read More
+            <span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aboutUs py-5">
+    <div class="container aboutUs__container py-md-5">
+      <div class="aboutUs__content row">
+        <div class="aboutUS__left col-lg-5">
+          <div class="aboutUS__title">
+            <h6>About Us</h6>
+            <h3>We found our creative space that is open for you.</h3>
+          </div>
+        </div>
+        <div class="aboutUS__right col-lg-7 pl-lg-5 mt-lg-0 mt-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum quos iusto odio facilis molestias illo
+            quo exercitationem dolore, optio veritatis porro. Aut iure, explicabo magnam ipsa fugit aperiam expedita?
+          </p>
+          <p class="mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat deserunt incidunt aliquam molestias sed
+            officia quod, nostrum quia odit repellat reiciendis quos? Culpa, temporibus. Ut ducimus dolore dicta eos
+            esse.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="branch">
+    <div class="branch__container container-fluid px-lg-0">
+      <div class="row align-items-center no-gutters">
+        <div class="col-lg-6 px-0 py-0 ">
+          <div class="branch__img py-0">
+            <img src="./img/banner3.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 px-lg-4 p-lg-3 py-4">
+          <div class="branch__info p-md-5 p-3">
+            <h6>More than 3000 restaurants</h6>
+            <h3>Book a table easily at the best price</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate, inventore eos
+              tempora facere harum! Nemo ipsam impedit eligendi unde. Nihil aliquid maxime exercitationem numquam sequi
+              recusandae iste nobis dicta.</p>
+            <div class="best mt-3 row ">
+              <div class="best__deals col-lg-6 col-md-6 ">
+                <div class="like mb-4">
+                  <span class="fa fa-thumbs-up"></span>
+                </div>
+                <a href="#" class="best__deals__title">Best Deals</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae alias quia</p>
+              </div>
+              <div class="best__food col-lg-6 col-md-6">
+                <div class="utensils mb-4">
+                  <span class="fa-solid fa-utensils"></span>
+                </div>
+                <a href="#" class="best__food__title">Best Food</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis no</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- PHÚC -->
+  <section id="category">
+    <div id="service"></div>
+    <div id="card"></div>
+  </section>
+  <section id="number"></section>
+  <section id="video"></section>
+
+  <!-- QUỲNH -->
+  <section id="post"></section>
+  <section id="testimonial"></section>
+  <footer></footer>
+  <section id="scroll-to-top"></section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- JS từ các library -->
+  <!-- ------------ Bỏ vào từ đây ------------ -->
+
+  <!-- ------------ đến đây nhé ------------ -->
+
+  <!-- Custom JS -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
